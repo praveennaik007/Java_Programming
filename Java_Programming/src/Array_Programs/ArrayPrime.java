@@ -11,24 +11,31 @@ public static void main(String[] args) {
 	for (int i = 0; i < a.length; i++) {
 		a[i]=sc.nextInt();
 	}
-	
+	int count=0;
 	for (int i = 0; i < a.length; i++) {
+		int x=a[i];
+		if(x==1)
+		{
+			continue;
+		}
 		boolean rs=true;
-	for (int j = 2; j < a[i]; j++) {
+	for (int j = 2; j < x; j++) {
 		
 		if(a[i]%j==0)
 		{
-			rs=false;
-			break;
+//			rs=false;
+//			break;
+			count++;
 		}
 	}
-	if(rs)
+	if(count==0)
+	//if(rs)
 	{
-		System.out.println(a[i]+" prime");
+		System.out.println(x+" prime");
 	}
 	else
 	{
-		System.out.println(a[i]+" not prime");
+		System.out.println(x+" not prime");
 	}
 	}
 }

@@ -2,10 +2,10 @@ package Number_Programs;
 
 public class SquareRootOf36 {
 public static void main(String[] args) {
-	int a=36;
+	int a=81;
 	boolean rs=false;
 	int g=0;
-	for (int i = 1; i <=a; i++) {
+	for (int i = 1; i <=a/2; i++) {
 		if(i*i==a)
 		{
 			System.out.println(i);

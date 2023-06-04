@@ -7,7 +7,8 @@ public static void main(String[] args) {
 	Scanner sc= new Scanner(System.in);
 //	System.out.println("Enter the number ");
 //	int n=sc.nextInt();
-	int n=01002;
+	int n=01023;
+//	System.out.println(n);
 	int count=0;
 	while(n>0)
 	{

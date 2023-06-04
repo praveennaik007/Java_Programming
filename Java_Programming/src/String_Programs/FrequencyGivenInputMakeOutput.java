@@ -16,6 +16,7 @@ public static void main(String[] args) {
 		int  count=1;
 		if(visited.indexOf(ch)== -1)
 		{ 
+			
 			for (int j = i+1;j<s.length();j++) 
 			{
 				
@@ -24,8 +25,12 @@ public static void main(String[] args) {
 					count++;
 				}			
 			}			
-	
-		System.out.print(ch+""+count);
+			if((ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'))
+			{
+//				vow++;
+				System.out.print(ch+""+count);
+
+			}
 		visited+=ch;
 	}
 }

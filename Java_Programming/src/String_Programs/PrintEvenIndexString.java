@@ -9,12 +9,14 @@ public static void main(String[] args) {
 	String s=sc.nextLine();
 	String str="";
 	for (int i = 0; i < s.length(); i++) {
-		char ch=s.charAt(i);
+		
 		if(i%2==0)
 		{
-			str+=ch+",";
+			
+				System.out.print(s.charAt(i));
+		
 		}
 	}
-	System.out.println(str);
+	
 }
 }

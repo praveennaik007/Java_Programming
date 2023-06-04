@@ -7,26 +7,26 @@ public class InitCharOrEachWrdFrstCharUppRemaningLower {
 public static void main(String[] args) {
 	Scanner sc= new Scanner(System.in);
 	
-	System.out.println("!== Using split Method ==!");
-	
-	System.out.println("Enter the name ");
-	String st=sc.nextLine();
-	String s1="";
-	st=st.toLowerCase();
-	String str[]=st.split("");
-	System.out.println(Arrays.toString(str));
-	for (int i = 0; i < str.length; i++) {
-		char ch=st.charAt(i);
-		if(i==0||st.charAt(i-1)==' ')
-		{
-			s1+=str[i].toUpperCase();
-		}
-		else
-		{
-			s1+=str[i];
-		}
-	}
-	System.out.println(s1);
+//	System.out.println("!== Using split Method ==!");
+//	
+//	System.out.println("Enter the name ");
+//	String st=sc.nextLine();
+//	String s1="";
+//	st=st.toLowerCase();
+//	String str[]=st.split("");
+//	System.out.println(Arrays.toString(str));
+//	for (int i = 0; i < str.length; i++) {
+//		char ch=st.charAt(i);
+//		if(i==0||st.charAt(i-1)==' ')
+//		{
+//			s1+=str[i].toUpperCase();
+//		}
+//		else
+//		{
+//			s1+=str[i];
+//		}
+//	}
+//	System.out.println(s1);
 	
 	System.out.println("!== Without using inbuilt method ==!");
 	
@@ -47,6 +47,19 @@ public static void main(String[] args) {
 	}
 	System.out.println(strg);
 	
-	
+	String s1="PraVEen KUmAr NaIk ";
+	s1=s1.toLowerCase();
+	String st="";
+	for (int i = 0; i < s1.length(); i++) {
+		if(i==0 || s1.charAt(i-1)==' ')
+		{
+			st+=(char)(s1.charAt(i)-32);
+		}
+		else
+		{
+			st+=s1.charAt(i);
+		}
+	}
+	System.out.println(st);
 }
 }

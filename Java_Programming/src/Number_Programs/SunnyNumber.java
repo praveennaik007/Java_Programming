@@ -16,6 +16,11 @@ public static void main(String[] args) {
 		{
 			rs=true;
 			break;
+			
+		}
+		else
+		{
+			rs=false;
 		}
 	}
 	if(rs==true)

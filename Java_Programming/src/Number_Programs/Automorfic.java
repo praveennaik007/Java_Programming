@@ -14,15 +14,12 @@ public static void main(String[] args) {
 	{
 		if(a%10==sq%10)
 		{
+			rs=true;
 			a/=10;
 			sq/=10;
 			
 		}
-		else
-		{
-			rs=false;
-			break;
-		}
+		
 	}
 	if(rs==true)
 	{

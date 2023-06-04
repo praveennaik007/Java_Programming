@@ -36,7 +36,7 @@ for (int i = 100; i <=200 ; i++) {
 	}
 	if(temp==sum)
 	{
-	System.out.println("ArmStrong "+sum);	
+	System.out.println("ArmStrong "+sum);
 	}
 	else
 	{
